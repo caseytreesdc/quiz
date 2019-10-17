@@ -42,6 +42,10 @@ h{
     font-weight: 500;
 }
 
+#questionImage {
+    margin-bottom: 4rem;
+}
+
 /* UTILITIES */
 
 .container {

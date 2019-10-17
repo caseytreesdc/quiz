@@ -1,4 +1,5 @@
 const question = document.getElementById("question");
+const questionImage = document.getElementById("questionImage");
 const explanation = document.getElementById("explanation");
 const choices = Array.from( document.getElementsByClassName("choice-text"));
 const progressText = document.getElementById('progressText');
@@ -16,6 +17,7 @@ let availableQuestions = [];
 
 let questions = [
     {
+    questionImage: "<img src='images/trees.png' width='100%'>",
     question: "How many trees did our volunteers plant this spring?",
     explanation: "Our volunteers planted 3000 trees last spring",
     choice1: "100",
@@ -25,15 +27,17 @@ let questions = [
     answer: 4
     },
     {
-    question: "How many people volunteered with Casey Trees this spring?",
-    explanation: "600 volunteers came out and volunteered with us last spring", 
-    choice1: "10",
-    choice2: "50", 
-    choice3: "100",
-    choice4: "600",
+    questionImage: "<img src='images/volunteers.png' width='100%'>",
+    question: "How many people volunteered with Casey Trees in the past year?",
+    explanation: "1203 volunteers joined us to plant, inventory and care for D.C.'s urban forest", 
+    choice1: "202",
+    choice2: "423", 
+    choice3: "1545",
+    choice4: "1203",
     answer: 4, 
     },
     {
+    questionImage: "<img src='images/water.png' width='100%'>",
     question: "How much water do newly planted trees need to survive per week?",
     explanation: "Trees need 25 gallons of water per week to survive",
     choice1: "2 gallons",
@@ -42,17 +46,27 @@ let questions = [
     choice4: "50 gallons",
     answer: 3
     },
+    {
+    questionImage: "<img src='images/sweetgum.png' width='100%'>",
+    question: "How many pounds of carbon can a mature sweetgum remove from the atmosphere?",
+    explanation: "A mature sweetgum can remove 464 pounds of carbon from the atmosphere",
+    choice1: "568 pounds",
+    choice2: "464 pounds", 
+    choice3: "305 pounds",
+    choice4: "68 pounds",
+    answer: 2
+    },
 ]
 
 //CONSTANTS
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 3;
+const MAX_QUESTIONS = 4;
 
 startGame = () => {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
-    console.log(availableQuestions);
+    //console.log(availableQuestions);
     getNewQuestion();
 };
 
@@ -67,12 +81,12 @@ getNewQuestion = () => {
     //Update the progress bar
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
-    //console.log(questionCounterText.innerText);
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
     explanation.innerText = currentQuestion.explanation;
+    questionImage.innerHTML = currentQuestion.questionImage;
 
     choices.forEach( choice => {
         const number = choice.dataset['number'];
@@ -91,7 +105,9 @@ choices.forEach(choice => {
         acceptingAnswers=false;
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset["number"];
-        
+        const correctAnswer = currentQuestion.answer;
+
+        console.log(correctAnswer);
 
         const classToApply = 
             selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
@@ -100,8 +116,11 @@ choices.forEach(choice => {
                 incrementScore(CORRECT_BONUS);
             }
 
-            console.log(choice.innerText, selectedAnswer, currentQuestion.answer, selectedChoice.parentElement, currentQuestion);
-            console.dir(choices);
+            if (classToApply === "incorrect") {
+                progressBarFull.parentElement.classList.add("correct");
+            }
+
+            console.log(questionImage.innerText);
 
 
         selectedChoice.parentElement.classList.add(classToApply);
