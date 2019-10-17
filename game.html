@@ -18,28 +18,8 @@
         
         <div id="game" class="justify-center flex-column">
 
-            <div id="hud">
-                <div id="hud-item">
-                    <p id="progressText" class="hud-prefix">
-                        Question
-                    </p>
-                    <div id="progressBar">
-                        <div id="progressBarFull"></div>
-                    </div>
-                    <h1 class="hud-main-text" id="questionCounter"></h1>
-                </div>
-            
-                <div id="hud-item">
-                    <p class="hud-prefix">
-                        score
-                    </p>
-                    <h1 class="hud-main-text" id="score">
-                        0
-                    </h1>
-                </div>
-            </div>
-
             <div id="questionImage">question image?</div>
+
             <h2 id="question">What is the answer to this question</h2>
             
             <div class="choice-container">
@@ -58,6 +38,28 @@
                 <p class="choice-prefix">D</p>
                 <p class="choice-text" data-number="4">Choice 4</p>
             </div>
+
+            <div id="hud">
+                    <div id="hud-item">
+                        <p id="progressText" class="hud-prefix">
+                            Question
+                        </p>
+                        <div id="progressBar">
+                            <div id="progressBarFull"></div>
+                        </div>
+                        <h1 class="hud-main-text" id="questionCounter"></h1>
+                    </div>
+                
+                    <div id="hud-item">
+                        <p class="hud-prefix">
+                            score
+                        </p>
+                        <h1 class="hud-main-text" id="score">
+                            0
+                        </h1>
+                    </div>
+                </div>
+                
             <p class="correct-answer-hidden" id="explanation">This is the explanation for the correct answer for this question</p>
             <!--<button id="nextquestion">Next Question</button>-->
         </div>
