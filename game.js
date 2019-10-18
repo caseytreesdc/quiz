@@ -150,6 +150,8 @@ nextquestion.addEventListener("click", e => {
     for (var i = 0; i < choices.length; i++) {
             choices[i].parentElement.classList.remove("correct", "incorrect");
         }
+
+    questionImage.scrollIntoView();
     
 });
 
