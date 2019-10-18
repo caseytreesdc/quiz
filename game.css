@@ -26,7 +26,7 @@
 }
 
 .correct {
-    background-color: #6da77a;
+    background-color: #28a745;
 }
 
 .incorrect {
@@ -87,4 +87,9 @@ header {
 #logo {
     width: 200px;
     height: 100px;
+}
+
+/* NEXT QUESTION BUTTON */
+#nextquestion {
+    margin: 4rem 0;
 }
