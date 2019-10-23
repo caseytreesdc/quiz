@@ -28,14 +28,14 @@ let questions = [
     answer: 4
     },
     {
-    questionImage: "<img src='images/volunteers.png' width='100%'>",
-    question: "How many people volunteered with Casey Trees in the past year?",
-    explanation: "We love our volunteers. Story about how great our volunteers are. Why you should become one. 1203 volunteers joined us to plant, inventory and care for D.C.'s urban forest.", 
-    choice1: "202",
-    choice2: "423", 
-    choice3: "1545",
-    choice4: "1203",
-    answer: 4, 
+    questionImage: "<img src='images/scarletoak.png' width='100%'>",
+    question: "What is Washington D.C.'s state tree?",
+    explanation: "The scarlet oak (Quercus coccinea) is the official tree of the District of Columbia and has some of the most brilliant colors you will see in the fall season. Its deep red autumn colors appear late in the fall season and give the tree its common name. The scarlet oak is native to the Eastern United States. Its habitat stretches along most of the Appalachian Mountains, but can also be found in Southern Indiana, Southeastern Missouri and Mississippi.", 
+    choice1: "Pin oak",
+    choice2: "Scarlet oak", 
+    choice3: "White oak",
+    choice4: "Willow oak",
+    answer: 2, 
     },
     {
     questionImage: "<img src='images/water.png' width='100%'>",
