@@ -18,44 +18,54 @@ let availableQuestions = [];
 
 let questions = [
     {
-    questionImage: "<img src='images/trees.png' width='100%'>",
-    question: "How many trees were collectively planted in the District in 2018?",
-    explanation: "For the city to achieve its 40 percent canopy goal by 2032, at least 10,648 trees must be planted each year for the next 14 years. In 2018, 15,529 trees were collectively planted throughout D.C. This vastly surpasses the target and is the highest planting number to date",
-    choice1: "5,479",
-    choice2: "10,648", 
-    choice3: "13,456",
-    choice4: "15,529",
-    answer: 4
+    questionImage: "<img src='images/morton_and_caroline.jpg' width='100%'>",
+    question: "To what state did Julius Sterling Morton and his wife Caroline Joy French move to where he even briefly served as Acting Governor?",
+    explanation: "They were shocked by the lack of trees to help build and heat their home, as well as the lack of fruit and ornamental trees that provided entertainment and beauty. Photo Courtesy of NE State Historical Society",
+    choice1: "South Dakota",
+    choice2: "Nebraska", 
+    choice3: "Iowa",
+    choice4: "Kansas",
+    answer: 2
     },
     {
     questionImage: "<img src='images/scarletoak.png' width='100%'>",
-    question: "What is Washington D.C.'s state tree?",
-    explanation: "The scarlet oak (Quercus coccinea) is the official tree of the District of Columbia and has some of the most brilliant colors you will see in the fall season. Its deep red autumn colors appear late in the fall season and give the tree its common name. The scarlet oak is native to the Eastern United States. Its habitat stretches along most of the Appalachian Mountains, but can also be found in Southern Indiana, Southeastern Missouri and Mississippi.", 
-    choice1: "Pin oak",
-    choice2: "Scarlet oak", 
-    choice3: "White oak",
-    choice4: "Willow oak",
-    answer: 2, 
+    question: "In what year did Morton propose a resolution where his entire state would set aside one day in which they would plant trees?",
+    explanation: "Birdsey Northrop of Connecticut was responsible for globalizing the idea when he visited Japan in 1883 and delivered his Arbor Day and Village Improvement message. In that same year, the American Forestry Association made Northrop the Chairman of the committee to campaign for Arbor Day nationwide. He also brought his enthusiasm for Arbor Day to Australia, Canada, and Europe.", 
+    choice1: "1872",
+    choice2: "1912", 
+    choice3: "1885",
+    choice4: "1937",
+    answer: 1, 
     },
     {
     questionImage: "<img src='images/water.png' width='100%'>",
-    question: "How much water do newly planted trees need to survive per week?",
-    explanation: "The single most important factor for young tree survival is water. Continue watering through the first two to three years after planting. Young trees require 1.5 inches of rain or 25 gallons of water per week for the first three years to establish their roots.",
-    choice1: "2 gallons",
-    choice2: "2.5 gallons", 
-    choice3: "25 gallons",
-    choice4: "50 gallons",
-    answer: 3
+    question: "Why was April 22 originally chosen as the official holiday for Arbor Day?",
+    explanation: "Today, many countries observe such a holiday. Though usually observed in the spring, the date varies, depending on climate and suitable planting season.",
+    choice1: "It’s easy to remember the number 22",
+    choice2: "It was on a Saturday", 
+    choice3: "It was J. Sterling Morton’s birthday",
+    choice4: "State arborists suggested it",
+    answer: 2
     },
     {
     questionImage: "<img src='images/sweetgum.png' width='100%'>",
-    question: "How many pounds of carbon can a mature sweetgum remove from the atmosphere?",
-    explanation: "The American sweetgum has star-shaped leaves and spikey fruit valued by urban wildlife. A mature sweetgum can remove 464 pounds of carbon from the atmosphere and intercept approx. 4,389 gallons of stormwater runoff in a year.",
-    choice1: "568 pounds",
-    choice2: "464 pounds", 
-    choice3: "305 pounds",
-    choice4: "68 pounds",
-    answer: 2
+    question: "By 1920, how many states and territorial possessions of the U.S. were celebrating Arbor Day?",
+    explanation: "On the first Arbor Day, April 10, 1872, an estimated one million trees were planted",
+    choice1: "25",
+    choice2: "50", 
+    choice3: "60",
+    choice4: "45",
+    answer: 4
+    },
+    {
+    questionImage: "<img src='images/sweetgum.png' width='100%'>",
+    question: "Which President recognized Arbor Day nationwide as part of his administration’s other environmentally friendly actions?",
+    explanation: "These included establishing the EPA.",
+    choice1: "Richard Nixon",
+    choice2: "Dwight D. Eisenhower", 
+    choice3: "Jimmy Carter",
+    choice4: "Franklin D. Roosevelt",
+    answer: 1
     },
 ]
 
